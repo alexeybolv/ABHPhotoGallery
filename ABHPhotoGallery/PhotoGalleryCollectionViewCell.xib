@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoGalleryCollectionViewCell" id="uuX-gw-AKQ" customClass="PhotoGalleryCollectionViewCell" customModule="PhotoGallerySwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="168" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="168" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ivw-86-Fhr">
+                        <rect key="frame" x="0.0" y="0.0" width="168" height="175"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ivw-86-Fhr" secondAttribute="trailing" id="13T-7H-BSU"/>
+                <constraint firstItem="Ivw-86-Fhr" firstAttribute="leading" secondItem="uuX-gw-AKQ" secondAttribute="leading" id="t8O-Nl-aKd"/>
+                <constraint firstItem="Ivw-86-Fhr" firstAttribute="top" secondItem="uuX-gw-AKQ" secondAttribute="top" id="tPO-GF-som"/>
+                <constraint firstAttribute="bottom" secondItem="Ivw-86-Fhr" secondAttribute="bottom" id="u8p-PH-MiO"/>
+            </constraints>
+            <size key="customSize" width="168" height="175"/>
+            <connections>
+                <outlet property="photoGalleryCellImageView" destination="Ivw-86-Fhr" id="UIS-Pz-o5k"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="-102"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test.jpg" width="234" height="215"/>
+    </resources>
+</document>
